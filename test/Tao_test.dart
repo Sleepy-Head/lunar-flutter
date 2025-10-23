@@ -15,11 +15,4 @@ void main() {
     tao = Lunar.fromYmd(2021, 10, 18).getTao();
     expect(tao.getFestivals().toString(), '[地母娘娘圣诞, 四时会]');
   });
-
-  test('test61', () {
-    Solar solar = Solar.fromYmd(2025, 5, 27);
-    Lunar lunar = solar.getLunar();
-    Tao tao = lunar.getTao();
-    expect(tao.getOtherFestivals(), ['风府千岁', '南极长生大帝']);
-  });
 }

@@ -247,66 +247,12 @@ class LunarUtil {
 
   /// 逐日胎神方位
   static const List<String> POSITION_TAI_DAY = [
-    '占门碓 外东南',
-    '碓磨厕 外东南',
-    '厨灶炉 外正南',
-    '仓库门 外正南',
-    '房床栖 外正南',
-    '占门床 外正南',
-    '占碓磨 外正南',
-    '厨灶厕 外西南',
-    '仓库炉 外西南',
-    '房床门 外西南',
-    '占门栖 外西南',
-    '碓磨床 外西南',
-    '厨灶碓 外西南',
-    '仓库厕 外正西',
-    '房床炉 外正西',
-    '占大门 外正西',
-    '碓磨栖 外正西',
-    '厨灶床 外正西',
-    '仓库碓 外西北',
-    '房床厕 外西北',
-    '占门炉 外西北',
-    '碓磨门 外西北',
-    '厨灶栖 外西北',
-    '仓库床 外西北',
-    '房床碓 外正北',
-    '占门厕 外正北',
-    '碓磨炉 外正北',
-    '厨灶门 外正北',
-    '仓库栖 外正北',
-    '占房床 房内北',
-    '占门碓 房内北',
-    '碓磨厕 房内北',
-    '厨灶炉 房内北',
-    '仓库门 房内北',
-    '房床栖 房内中',
-    '占门床 房内中',
-    '占碓磨 房内南',
-    '厨灶厕 房内南',
-    '仓库炉 房内南',
-    '房床门 房内西',
-    '占门栖 房内东',
-    '碓磨床 房内东',
-    '厨灶碓 房内东',
-    '仓库厕 房内东',
-    '房床炉 房内中',
-    '占大门 外东北',
-    '碓磨栖 外东北',
-    '厨灶床 外东北',
-    '仓库碓 外东北',
-    '房床厕 外东北',
-    '占门炉 外东北',
-    '碓磨门 外正东',
-    '厨灶栖 外正东',
-    '仓库床 外正东',
-    '房床碓 外正东',
-    '占门厕 外正东',
-    '碓磨炉 外东南',
-    '厨灶门 外东南',
-    '仓库栖 外东南',
-    '占房床 外东南'
+    '占门碓 外东南','碓磨厕 外东南','厨灶炉 外正南','仓库门 外正南','房床栖 外正南','占门床 外正南','占碓磨 外正南','厨灶厕 外西南','仓库炉 外西南','房床门 外西南',
+    '占门栖 外西南','碓磨床 外西南','厨灶碓 外西南','仓库厕 外正西','房床炉 外正西','占大门 外正西','碓磨栖 外正西','厨灶床 外正西','仓库碓 外西北','房床厕 外西北',
+    '占门炉 外西北','碓磨门 外西北','厨灶栖 外西北','仓库床 外西北','房床碓 外正北','占门厕 外正北','碓磨炉 外正北','厨灶门 外正北','仓库栖 外正北','占房床 房内北',
+    '占门碓 房内北','碓磨厕 房内北','厨灶炉 房内北','仓库门 房内北','房床栖 房内中','占门床 房内中','占碓磨 房内南','厨灶厕 房内南','仓库炉 房内南','房床门 房内西',
+    '占门栖 房内东','碓磨床 房内东','厨灶碓 房内东','仓库厕 房内东','房床炉 房内中','占大门 外东北','碓磨栖 外东北','厨灶床 外东北','仓库碓 外东北','房床厕 外东北',
+    '占门炉 外东北','碓磨门 外正东','厨灶栖 外正东','仓库床 外正东','房床碓 外正东','占门厕 外正东','碓磨炉 外东南','厨灶门 外东南','仓库栖 外东南','占房床 外东南'
   ];
 
   /// 逐月胎神方位
@@ -976,70 +922,45 @@ class LunarUtil {
     '子': '癸'
   };
 
-  // LUNAR DATE
   static const Map<String, String> FESTIVAL = {
-    '1-1': '春节', // TAHUN BARU IMLEK
-    '1-15': '元宵节', // CAP GO MEH
-    '2-2': '龙头节', // DRAGON HEAD RAISING FESTIVAL
-    '5-5': '端午节', // HARI BAKCANG
-    '7-7': '七夕节', // CHINESE VALENTINE DAY
-    '8-15': '中秋节', // PERAYAAN KUE BULAN
-    '9-9': '重阳节', // DOUBLE NINTH FESTIVAL
-    '11-7': '冬至节', // PERAYAAN RONDE
-    '12-8': '腊八节' // LABA FESTIVAL
-  };
-
-  //TODO: TESTING INDOFESTIVAL
-  static const Map<String, String> INDO_FESTIVAL = {
-    '4-15': 'Hari Raya Waisak',
-    '8-17': 'Kemerdekaan Indonesia',
-  };
-
-  static const Map<String, List<String>> EXTRA_FESTIVAL = {
-    '5-5': ['端午节'],
-    '7-15': ['中元节'],
-    '8-15': ['中秋节']
+    '1-1': '春节',
+    '1-15': '元宵节',
+    '2-2': '龙头节',
+    '5-5': '端午节',
+    '7-7': '七夕节',
+    '8-15': '中秋节',
+    '9-9': '重阳节',
+    '12-8': '腊八节'
   };
 
   static const Map<String, List<String>> OTHER_FESTIVAL = {
-    // PERAYAAN MUSIM SEMI & TAHUN BARU IMLEK
-    '1-4': ['接神日'], // JIE SHEN RI, HARI MENYAMBUT DEWA
-    '1-5': ['隔开日'], // GE KAI RI, HARI PEMISAHAN
-    '1-7': ['人日'], // REN RI, HARI KELAHIRAN MANUSIA
-    '1-8': [
-      '谷日',
-      '顺星节'
-    ], // GU RI, SHUN XING JIE, HARI BIJI2AN & FESTIVAL MEMUJA BINTANG, PERAYAAN UNTUK KESUBURAN TANAH DAN ASTROLOGI
-    '1-9': ['天日'], // TIAN RI, HARI LANGIT
-    '1-10': ['地日'], // DI RI, HARI BUMI
-    '1-20': ['天穿节'], // TIAN CHUAN JIE, FESTIVAL "LANGIT BOCOR"
-    '1-25': ['填仓节'], // TIAN CANG JIE, FESTIVAL MENGISI LUMBUNG
-    '1-30': [
-      '正月晦'
-    ], // ZHENG YUE HUI, MALAM BULAN GELAP PADA AKHIR BULAN PERTAMA
-    // PERAYAAN MUSIM SEMI & MUSIM PANAS
-    '2-1': ['中和节'], // ZHONG HE JIE, FESTIVAL KESELARASAN TENGAH
-    '2-2': ['社日节'], // SHE RI JIE, FESTIVAL DEWA TANAH
-    '3-3': ['上巳节'], // SHANG SI JIE, FESTIVAL SHANGSI
-    '5-20': ['分龙节'], // FEN LONG JIE, FESTIVAL PEMBAGIAN NAGA
-    '5-25': ['会龙节'], // HUI LONG JIE, FESTIVAL BERKUMPULNYA NAGA
-    // PERAYAAN MUSIM PANAS & MUSIM GUGUR
-    '6-6': ['天贶节'], // TIAN KUANG JIE, FESTIVAL HADIAH DARI SURGA
-    '6-24': ['观莲节'], // GUAN LIAN JIE, FESTIVAL MELIHAT TERATAI
-    '6-25': ['五谷母节'], // WU GU MU JIE, FESTIVAL IBU LIMA BIJI2AN,
-    '7-15': [
-      '中元节'
-    ], // ZHONG YUAN JIE, FESTIVAL PERTENGAHAN TAHUN (FESTIVAL BULAN HANTU)
-    '7-22': ['财神节'], // CAI SHEN JIE, FESTIVAL DEWA KEKAYAAN
-    '7-29': ['地藏节'], // DI ZANG JIE, FESTIVAL KSITIGARBHA (DIZANG)
-    // PERAYAAN MUSIM GUGUR & MUSIM DINGIN
-    '8-1': ['天灸日'], // TIAN JIU RI, HARI PENGOBATAN LANGIT
-    '10-1': ['寒衣节'], // HAN YI JIE, FESTIVAL PAKAIAN DINGIN
-    '10-10': ['十成节'], // SHI CHENG JIE, FESTIVAL SEPULUH KESEHARIAN
-    '10-15': ['下元节'], // XIE YUAN JIE, FESTIVAL XIA YUAN
-    '12-7': ['驱傩日'], // QU NUO RI, HARI PENGUSIRAN ROH JAHAT
-    '12-16': ['尾牙'], // WEI YA, FESTIVAL AKHIR YA
-    '12-24': ['祭灶日'] // JI ZAO RI, FESTIVAL PENGHORMATAN DEWA DAPUR
+    '1-4': ['接神日'],
+    '1-5': ['隔开日'],
+    '1-7': ['人日'],
+    '1-8': ['谷日', '顺星节'],
+    '1-9': ['天日'],
+    '1-10': ['地日'],
+    '1-20': ['天穿节'],
+    '1-25': ['填仓节'],
+    '1-30': ['正月晦'],
+    '2-1': ['中和节'],
+    '2-2': ['社日节'],
+    '3-3': ['上巳节'],
+    '5-20': ['分龙节'],
+    '5-25': ['会龙节'],
+    '6-6': ['天贶节'],
+    '6-24': ['观莲节'],
+    '6-25': ['五谷母节'],
+    '7-15': ['中元节'],
+    '7-22': ['财神节'],
+    '7-29': ['地藏节'],
+    '8-1': ['天灸日'],
+    '10-1': ['寒衣节'],
+    '10-10': ['十成节'],
+    '10-15': ['下元节'],
+    '12-7': ['驱傩日'],
+    '12-16': ['尾牙'],
+    '12-24': ['祭灶日']
   };
 
   static const Map<String, String> XIU = {

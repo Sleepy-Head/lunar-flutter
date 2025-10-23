@@ -59,49 +59,6 @@ class SolarUtil {
     '12-25': '圣诞节'
   };
 
-  //TODO: TESTING INDOFESTIVAL
-  static const Map<String, String> INDO_FIX_HOLIDAY_FESTIVAL = {
-    '1-1': 'Tahun Baru Masehi',
-    '5-1': 'Hari Buruh Internasional',
-    '6-1': 'Hari Lahir Pancasila',
-    '8-17': 'Hari Proklamasi Kemerdekaan Republik Indonesia',
-    '12-25': 'Hari Raya Natal'
-    // '1-27': 'Isra Mi\'raj',
-    // '1-28': 'Cuti Bersama Tahun Baru Imlek',
-    // '1-29': 'Tahun Baru Imlek',
-    // '3-28': 'Cuti Bersama Hari Suci Nyepi',
-    // '3-31': 'Hari Raya Idul Fitri',
-    // '4-18': 'Jumat Agung',
-    // '4-20': 'Paskah'
-    // '5-12': 'Hari Waisak',
-    // '5-29': 'Kenaikan Isa Almasih',
-    // '7-27': 'Tahun Baru Islam',
-    // '9-5': 'Maulid Nabi Muhammad SAW',
-  };
-
-  //TODO: TESTING INDOFESTIVAL
-  static const Map<String, String> INDO_FIX_NON_HOLIDAY_FESTIVAL = {
-    '2-9': 'Hari Pers Nasional',
-    '2-14': 'Hari Kasih Sayang',
-    '3-14': 'Hari Pi',
-    '4-5': 'Hari Pemuda Islam',
-    '4-21': 'Hari Kartini',
-    '5-2': 'Hari Pendidikan Nasional',
-    '5-20': 'Hari Kebangkitan Nasional',
-    '5-21': 'Hari Reformasi Nasional',
-    '6-22': 'Hari Ulang Tahun Kota Jakarta',
-    '7-23': 'Hari Anak Nasional',
-    '8-10': 'Hari Veteral Nasional',
-    '9-17': 'Hari Perhubungan Nasional',
-    '10-5': 'Hari TNI',
-    '10-27': 'Hari Listrik Nasional',
-    '10-28': 'Hari Sumpah Pemuda',
-    '11-10': 'Hari Pahlawan',
-    '11-25': 'Hari Guru Nasional',
-    '12-9': 'Hari Antikorupsi Sedunia',
-    '12-22': 'Hari Ibu',
-  };
-
   /// 几月第几个星期几对应的节日
   static const Map<String, String> WEEK_FESTIVAL = {
     '3-0-1': '全国中小学生安全教育日',
@@ -323,12 +280,7 @@ class SolarUtil {
   /// @param start 星期几作为一周的开始，1234560分别代表星期一至星期天
   /// @return 周数
   static int getWeeksOfMonth(int year, int month, int start) {
-    return ((getDaysOfMonth(year, month) +
-                Solar.fromYmd(year, month, 1).getWeek() -
-                start) *
-            1.0 /
-            WEEK.length)
-        .ceil();
+    return ((getDaysOfMonth(year, month) + Solar.fromYmd(year, month, 1).getWeek() - start) * 1.0 / WEEK.length).ceil();
   }
 
   /// 获取两个日期之间相差的天数（如果日期a比日期b小，天数为正，如果日期a比日期b大，天数为负）
@@ -345,7 +297,8 @@ class SolarUtil {
     int days;
     int i;
     if (ay == by) {
-      n = getDaysInYear(by, bm, bd) - getDaysInYear(ay, am, ad);
+      n = getDaysInYear(by, bm, bd) -
+          getDaysInYear(ay, am, ad);
     } else if (ay > by) {
       days = getDaysOfYear(by) - getDaysInYear(by, bm, bd);
       for (i = by + 1; i < ay; i++) {
@@ -363,4 +316,5 @@ class SolarUtil {
     }
     return n;
   }
+
 }
