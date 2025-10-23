@@ -73,6 +73,15 @@ class Tao {
     return l;
   }
 
+  List<String> getOtherFestivals() {
+    List<String> l = <String>[];
+    List<String>? fs = TaoUtil.EXTRA_FESTIVAL['${getMonth()}-${getDay()}'];
+    if (null != fs) {
+      l.addAll(fs);
+    }
+    return l;
+  }
+
   bool _isDayIn(List<String> days) {
     String md = '${getMonth()}-${getDay()}';
     for (String d in days) {

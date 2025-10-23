@@ -976,17 +976,29 @@ class LunarUtil {
     '子': '癸'
   };
 
+  // LUNAR DATE
   static const Map<String, String> FESTIVAL = {
     '1-1': '春节', // TAHUN BARU IMLEK
     '1-15': '元宵节', // CAP GO MEH
     '2-2': '龙头节', // DRAGON HEAD RAISING FESTIVAL
-    '4-4': '清明节', //TODO: IF NOT KABISAT 5 APRIL
     '5-5': '端午节', // HARI BAKCANG
     '7-7': '七夕节', // CHINESE VALENTINE DAY
     '8-15': '中秋节', // PERAYAAN KUE BULAN
     '9-9': '重阳节', // DOUBLE NINTH FESTIVAL
-    '1-7': '冬至节', // PERAYAAN RONDE
+    '11-7': '冬至节', // PERAYAAN RONDE
     '12-8': '腊八节' // LABA FESTIVAL
+  };
+
+  //TODO: TESTING INDOFESTIVAL
+  static const Map<String, String> INDO_FESTIVAL = {
+    '4-15': 'Hari Raya Waisak',
+    '8-17': 'Kemerdekaan Indonesia',
+  };
+
+  static const Map<String, List<String>> EXTRA_FESTIVAL = {
+    '5-5': ['端午节'],
+    '7-15': ['中元节'],
+    '8-15': ['中秋节']
   };
 
   static const Map<String, List<String>> OTHER_FESTIVAL = {
