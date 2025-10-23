@@ -22,11 +22,9 @@ class Solar {
 
   int _second = 0;
 
-  Solar.fromYmd(int year, int month, int day)
-      : this.fromYmdHms(year, month, day, 0, 0, 0);
+  Solar.fromYmd(int year, int month, int day) : this.fromYmdHms(year, month, day, 0, 0, 0);
 
-  Solar.fromYmdHms(
-      int year, int month, int day, int hour, int minute, int second) {
+  Solar.fromYmdHms(int year, int month, int day, int hour, int minute, int second) {
     if (1582 == year && 10 == month) {
       if (day > 4 && day < 15) {
         throw 'wrong solar year $year month $month day $day';
@@ -124,9 +122,7 @@ class Solar {
     _second = second;
   }
 
-  static List<Solar> fromBaZi(String yearGanZhi, String monthGanZhi,
-      String dayGanZhi, String timeGanZhi,
-      {int sect = 2, int baseYear = 1900}) {
+  static List<Solar> fromBaZi(String yearGanZhi, String monthGanZhi, String dayGanZhi, String timeGanZhi, {int sect = 2, int baseYear = 1900}) {
     sect = (1 == sect) ? 1 : 2;
     List<Solar> l = [];
     // 月地支距寅月的偏移值
@@ -135,11 +131,7 @@ class Solar {
       m += 12;
     }
     // 月天干要一致
-    if (((LunarUtil.find(yearGanZhi.substring(0, 1), LunarUtil.GAN, -1) + 1) *
-                    2 +
-                m) %
-            10 !=
-        LunarUtil.find(monthGanZhi.substring(0, 1), LunarUtil.GAN, -1)) {
+    if (((LunarUtil.find(yearGanZhi.substring(0, 1), LunarUtil.GAN, -1) + 1) * 2 + m) % 10 != LunarUtil.find(monthGanZhi.substring(0, 1), LunarUtil.GAN, -1)) {
       return l;
     }
     // 1年的立春是辛酉，序号57
@@ -165,13 +157,10 @@ class Solar {
       if (y >= startYear) {
         // 立春为寅月的开始
         // 节令推移，年干支和月干支就都匹配上了
-        Solar solarTime =
-            Lunar.fromYmd(y, 1, 1).getJieQiTable()[Lunar.JIE_QI_IN_USE[4 + m]]!;
+        Solar solarTime = Lunar.fromYmd(y, 1, 1).getJieQiTable()[Lunar.JIE_QI_IN_USE[4 + m]]!;
         if (solarTime.getYear() >= baseYear) {
           // 日干支和节令干支的偏移值
-          int d = LunarUtil.getJiaZiIndex(dayGanZhi) -
-              LunarUtil.getJiaZiIndex(
-                  solarTime.getLunar().getDayInGanZhiExact2());
+          int d = LunarUtil.getJiaZiIndex(dayGanZhi) - LunarUtil.getJiaZiIndex(solarTime.getLunar().getDayInGanZhiExact2());
           if (d < 0) {
             d += 60;
           }
@@ -188,16 +177,10 @@ class Solar {
               s = solarTime.getSecond();
             }
             // 验证一下
-            Solar solar = Solar.fromYmdHms(solarTime.getYear(),
-                solarTime.getMonth(), solarTime.getDay(), hour, mi, s);
+            Solar solar = Solar.fromYmdHms(solarTime.getYear(), solarTime.getMonth(), solarTime.getDay(), hour, mi, s);
             Lunar lunar = solar.getLunar();
-            String dgz = (2 == sect)
-                ? lunar.getDayInGanZhiExact2()
-                : lunar.getDayInGanZhiExact();
-            if (lunar.getYearInGanZhiExact() == yearGanZhi &&
-                lunar.getMonthInGanZhiExact() == monthGanZhi &&
-                dgz == dayGanZhi &&
-                lunar.getTimeInGanZhi() == timeGanZhi) {
+            String dgz = (2 == sect) ? lunar.getDayInGanZhiExact2() : lunar.getDayInGanZhiExact();
+            if (lunar.getYearInGanZhiExact() == yearGanZhi && lunar.getMonthInGanZhiExact() == monthGanZhi && dgz == dayGanZhi && lunar.getTimeInGanZhi() == timeGanZhi) {
               l.add(solar);
             }
           }
@@ -316,27 +299,6 @@ class Solar {
     return l;
   }
 
-  //TODO: TESTING INDO FESTIVAL
-  List<String> getIndoFixHolidayFestivals() {
-    List<String> l = <String>[];
-    //获取几月几日对应的节日
-    String? f = SolarUtil.INDO_FIX_HOLIDAY_FESTIVAL['$_month-$_day'];
-    if (null != f) {
-      l.add(f);
-    }
-    return l;
-  }
-
-  List<String> getIndoFixNonHolidayFestivals() {
-    List<String> l = <String>[];
-    //获取几月几日对应的节日
-    String? f = SolarUtil.INDO_FIX_NON_HOLIDAY_FESTIVAL['$_month-$_day'];
-    if (null != f) {
-      l.add(f);
-    }
-    return l;
-  }
-
   /// 获取非正式的节日，有可能一天会有多个节日
   /// @return 非正式的节日列表，如中元节
   List<String> getOtherFestivals() {
@@ -348,8 +310,7 @@ class Solar {
     return l;
   }
 
-  int subtract(Solar solar) => SolarUtil.getDaysBetween(
-      solar.getYear(), solar.getMonth(), solar.getDay(), _year, _month, _day);
+  int subtract(Solar solar) => SolarUtil.getDaysBetween(solar.getYear(), solar.getMonth(), solar.getDay(), _year, _month, _day);
 
   int subtractMinute(Solar solar) {
     int days = subtract(solar);
@@ -459,7 +420,7 @@ class Solar {
       if (d > 4 && d < 15) {
         d += 10;
       }
-    } else {
+    }  else {
       int maxDay = SolarUtil.getDaysOfMonth(y, m);
       if (d > maxDay) {
         d = maxDay;
@@ -513,19 +474,17 @@ class Solar {
   /// @param onlyWorkday 是否仅限工作日
   /// @return 阳历日期
   Solar next(int days, [bool onlyWorkday = false]) {
-    if (!onlyWorkday) {
+    if(!onlyWorkday) {
       return nextDay(days);
     }
-    Solar solar =
-        Solar.fromYmdHms(_year, _month, _day, _hour, _minute, _second);
+    Solar solar = Solar.fromYmdHms(_year, _month, _day, _hour, _minute, _second);
     if (days != 0) {
       int rest = days.abs();
       int add = days < 0 ? -1 : 1;
       while (rest > 0) {
         solar = solar.nextDay(add);
         bool work = true;
-        Holiday? holiday = HolidayUtil.getHolidayByYmd(
-            solar.getYear(), solar.getMonth(), solar.getDay());
+        Holiday? holiday = HolidayUtil.getHolidayByYmd(solar.getYear(), solar.getMonth(), solar.getDay());
         if (null == holiday) {
           int week = solar.getWeek();
           if (0 == week || 6 == week) {
@@ -553,8 +512,7 @@ class Solar {
       days--;
     }
     Solar solar = next(days);
-    return Solar.fromYmdHms(solar.getYear(), solar.getMonth(), solar.getDay(),
-        hour, solar.getMinute(), solar.getSecond());
+    return Solar.fromYmdHms(solar.getYear(), solar.getMonth(), solar.getDay(), hour, solar.getMinute(), solar.getSecond());
   }
 
   String toYmd() {
@@ -565,8 +523,7 @@ class Solar {
     return '$y-${_month < 10 ? '0' : ''}$_month-${_day < 10 ? '0' : ''}$_day';
   }
 
-  String toYmdHms() =>
-      '${toYmd()} ${_hour < 10 ? '0' : ''}$_hour:${_minute < 10 ? '0' : ''}$_minute:${_second < 10 ? '0' : ''}$_second';
+  String toYmdHms() => '${toYmd()} ${_hour < 10 ? '0' : ''}$_hour:${_minute < 10 ? '0' : ''}$_minute:${_second < 10 ? '0' : ''}$_second';
 
   String toFullString() {
     String s = toYmdHms();
