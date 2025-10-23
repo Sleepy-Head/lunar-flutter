@@ -64,7 +64,8 @@ void main() {
   });
 
   test('11', () {
-    DateTime date = DateTime.fromMillisecondsSinceEpoch(681231600000, isUtc: true);
+    DateTime date =
+        DateTime.fromMillisecondsSinceEpoch(681231600000, isUtc: true);
     Solar solar = Solar.fromDate(date);
     expect(solar.toYmd(), '1991-08-03');
     expect(solar.getLunar().toString(), '一九九一年六月廿三');
@@ -74,6 +75,11 @@ void main() {
   test('12', () {
     Solar solar = Solar.fromYmd(2022, 3, 28);
     expect(solar.getFestivals(), ['全国中小学生安全教育日']);
+  });
+
+  test('testttt', () {
+    Solar solar = Solar.fromYmd(2025, 6, 1);
+    expect(solar.getIndoFixHolidayFestivals(), ['Hari Lahir Pancasila']);
   });
 
   test('test12', () {
@@ -155,5 +161,4 @@ void main() {
     Solar solar = Solar.fromYmd(2023, 8, 31);
     expect(solar.nextYear(2).toYmd(), '2025-08-31');
   });
-
 }

@@ -348,5 +348,4 @@ void main() {
     Lunar lunar = Solar.fromYmd(918, 1, 1).getLunar();
     expect(lunar.toString(), '九一七年冬月十六');
   });
-
 }
