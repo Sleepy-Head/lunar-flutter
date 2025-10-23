@@ -58,7 +58,8 @@ class Foto {
 
   List<FotoFestival> getFestivals() {
     List<FotoFestival> l = <FotoFestival>[];
-    List<FotoFestival>? fs = FotoUtil.FESTIVAL['${getMonth().abs()}-${getDay()}'];
+    List<FotoFestival>? fs =
+        FotoUtil.FESTIVAL['${getMonth().abs()}-${getDay()}'];
     if (null != fs) {
       l.addAll(fs);
     }
@@ -68,6 +69,15 @@ class Foto {
   List<String> getOtherFestivals() {
     List<String> l = <String>[];
     List<String>? fs = FotoUtil.OTHER_FESTIVAL['${getMonth()}-${getDay()}'];
+    if (null != fs) {
+      l.addAll(fs);
+    }
+    return l;
+  }
+
+  List<String> getExtraFestivals() {
+    List<String> l = <String>[];
+    List<String>? fs = FotoUtil.EXTRA_FESTIVAL['${getMonth()}-${getDay()}'];
     if (null != fs) {
       l.addAll(fs);
     }

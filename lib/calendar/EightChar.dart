@@ -252,10 +252,10 @@ class EightChar {
       }
     }
     int offset = monthZhiIndex + timeZhiIndex;
-    while (offset > 12) {
+    if (offset > 12) {
       offset -= 12;
     }
-    int ganIndex = (_lunar.getYearGanIndexExact() + 1) * 2 + (offset % 12);
+    int ganIndex = (_lunar.getYearGanIndexExact() + 1) * 2 + offset;
     while (ganIndex > 10) {
       ganIndex -= 10;
     }

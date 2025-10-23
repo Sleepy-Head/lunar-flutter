@@ -190,6 +190,9 @@ class Solar {
             // 验证一下
             Solar solar = Solar.fromYmdHms(solarTime.getYear(),
                 solarTime.getMonth(), solarTime.getDay(), hour, mi, s);
+            if (d == 30) {
+              solar = solar.nextHour(-1);
+            }
             Lunar lunar = solar.getLunar();
             String dgz = (2 == sect)
                 ? lunar.getDayInGanZhiExact2()
