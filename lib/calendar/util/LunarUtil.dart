@@ -1005,6 +1005,7 @@ class LunarUtil {
   };
 
   static const Map<String, List<String>> EXTRA_FESTIVAL = {
+    '1-1': ['春节'],
     '5-5': ['端午节'],
     '7-15': ['中元节'],
     '8-15': ['中秋节']
