@@ -65,18 +65,7 @@ class SolarUtil {
     '5-1': 'Hari Buruh Internasional',
     '6-1': 'Hari Lahir Pancasila',
     '8-17': 'Hari Proklamasi Kemerdekaan Republik Indonesia',
-    '12-25': 'Hari Raya Natal'
-    // '1-27': 'Isra Mi\'raj',
-    // '1-28': 'Cuti Bersama Tahun Baru Imlek',
-    // '1-29': 'Tahun Baru Imlek',
-    // '3-28': 'Cuti Bersama Hari Suci Nyepi',
-    // '3-31': 'Hari Raya Idul Fitri',
-    // '4-18': 'Jumat Agung',
-    // '4-20': 'Paskah'
-    // '5-12': 'Hari Waisak',
-    // '5-29': 'Kenaikan Isa Almasih',
-    // '7-27': 'Tahun Baru Islam',
-    // '9-5': 'Maulid Nabi Muhammad SAW',
+    '12-25': 'Kelahiran Yesus Kristus (Natal)'
   };
 
   //TODO: TESTING INDOFESTIVAL
@@ -363,4 +352,219 @@ class SolarUtil {
     }
     return n;
   }
+
+// =============================
+// 2025
+  static const Map<String, List<String>> twentyFive_Holiday_Events_NoText = {
+    '2025-1-1': ['Tahun Baru Masehi'],
+    '2025-1-17': ['Tahun Baru Imlek'],
+  };
+
+  static const Map<String, List<String>> twentyFive_Holiday_Events = {
+    '2025-1-27': ['Isra Mi\'raj Nabi Muhammad SAW'],
+    '2025-3-31': ['Hari Raya Idul Fitri'],
+    '2025-4-1': ['Hari Raya Idul Fitri'],
+    '2025-4-18': ['Wafat Yesus Kristus (Jumat Agung)'],
+    '2025-4-20': ['Kebangkitan Yesus Kristus (Paskah)'],
+    '2025-5-12': ['Hari Raya Waisak'],
+    '2025-5-29': ['Kenaikan Yesus Kristus'],
+    '2025-6-6': ['Hari Raya Idul Adha'],
+    '2025-6-27': ['Tahun Baru Islam'],
+    '2025-9-5': ['Maulid Nabi Muhammad SAW'],
+  };
+
+  static const Map<String, List<String>> twentyFive_ExtraHoliday_Events = {
+    '2025-1-28': ['Cuti Tahun Baru Imlek'],
+    '2025-3-28': ['Cuti Hari Suci Nyepi Tahun Baru Saka'],
+    '2025-4-2': ['Cuti Hari Raya Idul Fitri'],
+    '2025-4-3': ['Cuti Hari Raya Idul Fitri'],
+    '2025-4-4': ['Cuti Hari Raya Idul Fitri'],
+    '2025-4-7': ['Cuti Hari Raya Idul Fitri'],
+    '2025-5-13': ['Cuti Hari Raya Waisak'],
+    '2025-5-30': ['Cuti Kenaikan Yesus Kristus'],
+    '2025-6-9': ['Cuti Idul Adha'],
+    '2025-8-18': ['Cuti Hari Proklamasi Kemerdekaan Republik Indonesia'],
+    '2025-12-26': ['Cuti Kelahiran Yesus Kristus (Natal)'],
+  };
+
+//2026
+  static const Map<String, List<String>> twentySix_Holiday_Events_NoText = {
+    '2026-1-1': ['Tahun Baru Masehi'],
+    '2026-1-17': ['Tahun Baru Imlek'],
+  };
+
+  static const Map<String, List<String>> twentySix_Holiday_Events = {
+    '2026-1-27': ['Isra Mi\'raj Nabi Muhammad SAW'],
+    '2026-3-19': ['Hari Suci Nyepi Tahun Baru Saka'],
+    '2026-3-21': ['Hari Raya Idul Fitri'],
+    '2026-3-22': ['Hari Raya Idul Fitri'],
+    '2026-4-3': ['Wafat Yesus Kristus (Jumat Agung)'],
+    '2026-4-5': ['Kebangkitan Yesus Kristus (Paskah)'],
+    '2026-5-14': ['Kenaikan Yesus Kristus'],
+    '2026-5-27': ['Hari Raya Idul Adha'],
+    '2026-5-31': ['Hari Raya Waisak'],
+    '2026-6-16': ['Tahun Baru Islam'],
+    '2026-8-25': ['Maulid Nabi Muhammad SAW'],
+  };
+
+  static const Map<String, List<String>> twentySix_ExtraHoliday_Events = {
+    '2026-1-16': ['Cuti Tahun Baru Imlek'],
+    '2026-3-18': ['Cuti Hari Suci Nyepi Tahun Baru Saka'],
+    '2026-3-20': ['Cuti Hari Raya Idul Fitri'],
+    '2026-3-23': ['Cuti Hari Raya Idul Fitri'],
+    '2026-3-24': ['Cuti Hari Raya Idul Fitri'],
+    '2026-5-15': ['Cuti Kenaikan Yesus Kristus'],
+    '2026-5-28': ['Cuti Idul Adha'],
+    '2026-12-24': ['Cuti Kelahiran Yesus Kristus (Natal)'],
+  };
+
+//2027
+  static const Map<String, List<String>> twentySeven_Holiday_Events_NoText = {
+    '2027-1-1': ['Tahun Baru Masehi'],
+    '2027-2-6': ['Tahun Baru Imlek'],
+  };
+
+  static const Map<String, List<String>> twentySeven_Holiday_Events = {
+    '2027-1-5': ['Isra Mi\'raj Nabi Muhammad SAW'],
+    '2027-3-9': ['Hari Suci Nyepi Tahun Baru Saka'],
+    '2027-3-10': ['Hari Raya Idul Fitri'],
+    '2027-3-11': ['Hari Raya Idul Fitri'],
+    '2027-3-26': ['Wafat Yesus Kristus (Jumat Agung)'],
+    '2027-3-28': ['Kebangkitan Yesus Kristus (Paskah)'],
+    '2027-5-6': ['Kenaikan Yesus Kristus'],
+    '2027-5-20': ['Hari Raya Waisak'],
+    '2027-6-6': ['Tahun Baru Islam'],
+    '2027-6-16': ['Hari Raya Idul Adha'],
+    '2027-8-15': ['Maulid Nabi Muhammad SAW'],
+    '2027-12-26': ['Isra Mi\'raj Nabi Muhammad SAW']
+  };
+
+  static const Map<String, List<String>> twentySeven_ExtraHoliday_Events = {
+    // TODO: Cuti 2027
+  };
+
+//2028
+  static const Map<String, List<String>> twentyEight_Holiday_Events_NoText = {
+    '2028-1-1': ['Tahun Baru Masehi'],
+    '2028-1-26': ['Tahun Baru Imlek'],
+  };
+
+  static const Map<String, List<String>> twentyEight_Holiday_Events = {
+    '2028-2-26': ['Hari Raya Idul Fitri'],
+    '2028-2-27': ['Hari Raya Idul Fitri'],
+    '2028-3-26': ['Hari Suci Nyepi Tahun Baru Saka'],
+    '2028-4-14': ['Wafat Yesus Kristus (Jumat Agung)'],
+    '2028-4-16': ['Kebangkitan Yesus Kristus (Paskah)'],
+    '2028-5-5': ['Hari Raya Idul Adha'],
+    '2028-5-9': ['Hari Raya Waisak'],
+    '2028-5-25': ['Tahun Baru Islam', 'Kenaikan Yesus Kristus'],
+    '2028-8-3': ['Maulid Nabi Muhammad SAW'],
+    '2028-12-14': ['Isra Mi\'raj Nabi Muhammad SAW']
+  };
+
+  static const Map<String, List<String>> twentyEight_ExtraHoliday_Events = {
+    // TODO: Cuti 2028
+  };
+
+//2029
+  static const Map<String, List<String>> twentyNine_Holiday_Events_NoText = {
+    '2029-1-1': ['Tahun Baru Masehi'],
+    '2029-2-13': ['Tahun Baru Imlek'],
+  };
+
+  static const Map<String, List<String>> twentyNine_Holiday_Events = {
+    '2029-2-14': ['Hari Raya Idul Fitri'],
+    '2029-2-15': ['Hari Raya Idul Fitri'],
+    '2029-3-15': ['Hari Suci Nyepi Tahun Baru Saka'],
+    '2029-3-30': ['Wafat Yesus Kristus (Jumat Agung)'],
+    '2029-4-1': ['Kebangkitan Yesus Kristus (Paskah)'],
+    '2029-4-24': ['Hari Raya Idul Adha'],
+    '2029-5-10': ['Kenaikan Yesus Kristus'],
+    '2029-5-14': ['Tahun Baru Islam'],
+    '2029-5-27': ['Hari Raya Waisak'],
+    '2029-7-24': ['Maulid Nabi Muhammad SAW'],
+    '2029-12-3': ['Isra Mi\'raj Nabi Muhammad SAW']
+  };
+
+  static const Map<String, List<String>> twentyNine_ExtraHoliday_Events = {
+    // TODO: Cuti 2029
+  };
+
+//2030
+  static const Map<String, List<String>> thirty_Holiday_Events_NoText = {
+    '2030-1-1': ['Tahun Baru Masehi'],
+    '2030-2-2': ['Tahun Baru Imlek'],
+  };
+
+  static const Map<String, List<String>> thirty_Holiday_Events = {
+    '2030-2-4': ['Hari Raya Idul Fitri'],
+    '2030-2-5': ['Hari Raya Idul Fitri'],
+    '2030-3-5': ['Hari Suci Nyepi Tahun Baru Saka'],
+    '2030-4-14': ['Hari Raya Idul Adha'],
+    '2030-4-19': ['Wafat Yesus Kristus (Jumat Agung)'],
+    '2030-4-21': ['Kebangkitan Yesus Kristus (Paskah)'],
+    '2030-5-4': ['Tahun Baru Islam'],
+    '2030-5-17': ['Hari Raya Waisak'],
+    '2030-5-30': ['Kenaikan Yesus Kristus'],
+    '2030-7-13': ['Maulid Nabi Muhammad SAW'],
+    '2030-11-23': ['Isra Mi\'raj Nabi Muhammad SAW']
+  };
+
+  static const Map<String, List<String>> thirty_ExtraHoliday_Events = {
+    // TODO: Cuti 2030
+  };
+
+//2031
+  static const Map<String, List<String>> thirtyOne_Holiday_Events_NoText = {
+    '2031-1-1': ['Tahun Baru Masehi'],
+    '2031-1-23': ['Tahun Baru Imlek'],
+  };
+
+  static const Map<String, List<String>> thirtyOne_Holiday_Events = {
+    '2031-1-25': ['Hari Raya Idul Fitri'],
+    '2031-1-26': ['Hari Raya Idul Fitri'],
+    '2031-3-24': ['Hari Suci Nyepi Tahun Baru Saka'],
+    '2031-4-3': ['Hari Raya Idul Adha'],
+    '2031-4-11': ['Wafat Yesus Kristus (Jumat Agung)'],
+    '2031-4-13': ['Kebangkitan Yesus Kristus (Paskah)'],
+    '2031-4-23': ['Tahun Baru Islam'],
+    '2031-5-7': ['Hari Raya Waisak'],
+    '2031-5-22': ['Kenaikan Yesus Kristus'],
+    '2031-7-2': ['Maulid Nabi Muhammad SAW'],
+    '2031-10-13': ['Isra Mi\'raj Nabi Muhammad SAW']
+  };
+
+  static const Map<String, List<String>> thirtyOne_ExtraHoliday_Events = {
+    // TODO: Cuti 2031
+  };
+
+  static const HOLIDAY_EVENTS_NOTEXT = {
+    ...twentyFive_Holiday_Events_NoText,
+    ...twentySix_Holiday_Events_NoText,
+    ...twentySeven_Holiday_Events_NoText,
+    ...twentyEight_Holiday_Events_NoText,
+    ...twentyNine_Holiday_Events_NoText,
+    ...thirty_Holiday_Events_NoText,
+    ...thirtyOne_Holiday_Events_NoText
+  };
+
+  static const HOLIDAY_EVENTS = {
+    ...twentyFive_Holiday_Events,
+    ...twentySix_Holiday_Events,
+    ...twentySeven_Holiday_Events,
+    ...twentyEight_Holiday_Events,
+    ...twentyNine_Holiday_Events,
+    ...thirty_Holiday_Events,
+    ...thirtyOne_Holiday_Events
+  };
+
+  static const EXTRAHOLIDAY_EVENTS = {
+    ...twentyFive_ExtraHoliday_Events,
+    ...twentySix_ExtraHoliday_Events,
+    ...twentySeven_ExtraHoliday_Events,
+    ...twentyEight_ExtraHoliday_Events,
+    ...twentyNine_ExtraHoliday_Events,
+    ...thirty_ExtraHoliday_Events,
+    ...thirtyOne_ExtraHoliday_Events
+  };
 }

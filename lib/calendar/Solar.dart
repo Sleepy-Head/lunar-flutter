@@ -340,6 +340,36 @@ class Solar {
     return l;
   }
 
+  List<String> getIndoHolidayEventsNoText() {
+    List<String> l = <String>[];
+    //获取几月几日对应的节日
+    List<String>? fs = SolarUtil.HOLIDAY_EVENTS_NOTEXT['$_year-$_month-$_day'];
+    if (null != fs) {
+      l.addAll(fs);
+    }
+    return l;
+  }
+
+  List<String> getIndoHolidayEvents() {
+    List<String> l = <String>[];
+    //获取几月几日对应的节日
+    List<String>? fs = SolarUtil.HOLIDAY_EVENTS['$_year-$_month-$_day'];
+    if (null != fs) {
+      l.addAll(fs);
+    }
+    return l;
+  }
+
+  List<String> getIndoExtraHolidayEvents() {
+    List<String> l = <String>[];
+    //获取几月几日对应的节日
+    List<String>? fs = SolarUtil.EXTRAHOLIDAY_EVENTS['$_year-$_month-$_day'];
+    if (null != fs) {
+      l.addAll(fs);
+    }
+    return l;
+  }
+
   /// 获取非正式的节日，有可能一天会有多个节日
   /// @return 非正式的节日列表，如中元节
   List<String> getOtherFestivals() {
