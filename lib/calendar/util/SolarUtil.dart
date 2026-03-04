@@ -74,21 +74,21 @@ class SolarUtil {
     '2-14': 'Hari Kasih Sayang',
     '3-14': 'Hari Pi',
     '4-5': 'Hari Pemuda Islam',
-    '4-21': 'Hari Kartini',
+    '4-21': 'Hari R.A. Kartini',
     '5-2': 'Hari Pendidikan Nasional',
     '5-20': 'Hari Kebangkitan Nasional',
     '5-21': 'Hari Reformasi Nasional',
     '6-22': 'Hari Ulang Tahun Kota Jakarta',
     '7-23': 'Hari Anak Nasional',
-    '8-10': 'Hari Veteral Nasional',
+    '8-10': 'Hari Veteran Nasional',
     '9-17': 'Hari Perhubungan Nasional',
-    '10-5': 'Hari TNI',
+    '10-5': 'Hari Tentara Nasional Indonesia',
     '10-27': 'Hari Listrik Nasional',
     '10-28': 'Hari Sumpah Pemuda',
-    '11-10': 'Hari Pahlawan',
+    '11-10': 'Hari Pahlawan Nasional',
     '11-25': 'Hari Guru Nasional',
     '12-9': 'Hari Antikorupsi Sedunia',
-    '12-22': 'Hari Ibu',
+    '12-22': 'Hari Ibu Nasional',
   };
 
   /// 几月第几个星期几对应的节日
@@ -356,18 +356,18 @@ class SolarUtil {
 // =============================
 // 2025
   static const Map<String, List<String>> twentyFive_Holiday_Events_NoText = {
-    '2025-1-1': ['Tahun Baru Masehi'],
     '2025-1-17': ['Tahun Baru Imlek'],
+    '2025-4-18': ['Wafat Yesus Kristus (Jumat Agung)'],
+    '2025-4-20': ['Kebangkitan Yesus Kristus (Paskah)'],
+    '2025-5-29': ['Kenaikan Yesus Kristus'],
   };
 
   static const Map<String, List<String>> twentyFive_Holiday_Events = {
     '2025-1-27': ['Isra Mi\'raj Nabi Muhammad SAW'],
+    '2025-3-29': ['Hari Suci Nyepi Tahun Baru Saka'],
     '2025-3-31': ['Hari Raya Idul Fitri'],
     '2025-4-1': ['Hari Raya Idul Fitri'],
-    '2025-4-18': ['Wafat Yesus Kristus (Jumat Agung)'],
-    '2025-4-20': ['Kebangkitan Yesus Kristus (Paskah)'],
     '2025-5-12': ['Hari Raya Waisak'],
-    '2025-5-29': ['Kenaikan Yesus Kristus'],
     '2025-6-6': ['Hari Raya Idul Adha'],
     '2025-6-27': ['Tahun Baru Islam'],
     '2025-9-5': ['Maulid Nabi Muhammad SAW'],
@@ -389,18 +389,17 @@ class SolarUtil {
 
 //2026
   static const Map<String, List<String>> twentySix_Holiday_Events_NoText = {
-    '2026-1-1': ['Tahun Baru Masehi'],
-    '2026-1-17': ['Tahun Baru Imlek'],
-  };
-
-  static const Map<String, List<String>> twentySix_Holiday_Events = {
-    '2026-1-27': ['Isra Mi\'raj Nabi Muhammad SAW'],
-    '2026-3-19': ['Hari Suci Nyepi Tahun Baru Saka'],
-    '2026-3-21': ['Hari Raya Idul Fitri'],
-    '2026-3-22': ['Hari Raya Idul Fitri'],
+    '2026-2-17': ['Tahun Baru Imlek'],
     '2026-4-3': ['Wafat Yesus Kristus (Jumat Agung)'],
     '2026-4-5': ['Kebangkitan Yesus Kristus (Paskah)'],
     '2026-5-14': ['Kenaikan Yesus Kristus'],
+  };
+
+  static const Map<String, List<String>> twentySix_Holiday_Events = {
+    '2026-1-16': ['Isra Mi\'raj Nabi Muhammad SAW'],
+    '2026-3-19': ['Hari Suci Nyepi Tahun Baru Saka'],
+    '2026-3-21': ['Hari Raya Idul Fitri'],
+    '2026-3-22': ['Hari Raya Idul Fitri'],
     '2026-5-27': ['Hari Raya Idul Adha'],
     '2026-5-31': ['Hari Raya Waisak'],
     '2026-6-16': ['Tahun Baru Islam'],
@@ -408,7 +407,7 @@ class SolarUtil {
   };
 
   static const Map<String, List<String>> twentySix_ExtraHoliday_Events = {
-    '2026-1-16': ['Cuti Tahun Baru Imlek'],
+    '2026-2-16': ['Cuti Tahun Baru Imlek'],
     '2026-3-18': ['Cuti Hari Suci Nyepi Tahun Baru Saka'],
     '2026-3-20': ['Cuti Hari Raya Idul Fitri'],
     '2026-3-23': ['Cuti Hari Raya Idul Fitri'],
@@ -420,8 +419,10 @@ class SolarUtil {
 
 //2027
   static const Map<String, List<String>> twentySeven_Holiday_Events_NoText = {
-    '2027-1-1': ['Tahun Baru Masehi'],
     '2027-2-6': ['Tahun Baru Imlek'],
+    '2027-3-26': ['Wafat Yesus Kristus (Jumat Agung)'],
+    '2027-3-28': ['Kebangkitan Yesus Kristus (Paskah)'],
+    '2027-5-6': ['Kenaikan Yesus Kristus'],
   };
 
   static const Map<String, List<String>> twentySeven_Holiday_Events = {
@@ -429,9 +430,6 @@ class SolarUtil {
     '2027-3-9': ['Hari Suci Nyepi Tahun Baru Saka'],
     '2027-3-10': ['Hari Raya Idul Fitri'],
     '2027-3-11': ['Hari Raya Idul Fitri'],
-    '2027-3-26': ['Wafat Yesus Kristus (Jumat Agung)'],
-    '2027-3-28': ['Kebangkitan Yesus Kristus (Paskah)'],
-    '2027-5-6': ['Kenaikan Yesus Kristus'],
     '2027-5-20': ['Hari Raya Waisak'],
     '2027-6-6': ['Tahun Baru Islam'],
     '2027-6-16': ['Hari Raya Idul Adha'],
@@ -445,19 +443,19 @@ class SolarUtil {
 
 //2028
   static const Map<String, List<String>> twentyEight_Holiday_Events_NoText = {
-    '2028-1-1': ['Tahun Baru Masehi'],
     '2028-1-26': ['Tahun Baru Imlek'],
+    '2028-4-14': ['Wafat Yesus Kristus (Jumat Agung)'],
+    '2028-4-16': ['Kebangkitan Yesus Kristus (Paskah)'],
+    '2028-5-25': ['Kenaikan Yesus Kristus'],
   };
 
   static const Map<String, List<String>> twentyEight_Holiday_Events = {
     '2028-2-26': ['Hari Raya Idul Fitri'],
     '2028-2-27': ['Hari Raya Idul Fitri'],
     '2028-3-26': ['Hari Suci Nyepi Tahun Baru Saka'],
-    '2028-4-14': ['Wafat Yesus Kristus (Jumat Agung)'],
-    '2028-4-16': ['Kebangkitan Yesus Kristus (Paskah)'],
     '2028-5-5': ['Hari Raya Idul Adha'],
     '2028-5-9': ['Hari Raya Waisak'],
-    '2028-5-25': ['Tahun Baru Islam', 'Kenaikan Yesus Kristus'],
+    '2028-5-25': ['Tahun Baru Islam'],
     '2028-8-3': ['Maulid Nabi Muhammad SAW'],
     '2028-12-14': ['Isra Mi\'raj Nabi Muhammad SAW']
   };
@@ -468,18 +466,17 @@ class SolarUtil {
 
 //2029
   static const Map<String, List<String>> twentyNine_Holiday_Events_NoText = {
-    '2029-1-1': ['Tahun Baru Masehi'],
     '2029-2-13': ['Tahun Baru Imlek'],
+    '2029-3-30': ['Wafat Yesus Kristus (Jumat Agung)'],
+    '2029-4-1': ['Kebangkitan Yesus Kristus (Paskah)'],
+    '2029-5-10': ['Kenaikan Yesus Kristus'],
   };
 
   static const Map<String, List<String>> twentyNine_Holiday_Events = {
     '2029-2-14': ['Hari Raya Idul Fitri'],
     '2029-2-15': ['Hari Raya Idul Fitri'],
     '2029-3-15': ['Hari Suci Nyepi Tahun Baru Saka'],
-    '2029-3-30': ['Wafat Yesus Kristus (Jumat Agung)'],
-    '2029-4-1': ['Kebangkitan Yesus Kristus (Paskah)'],
     '2029-4-24': ['Hari Raya Idul Adha'],
-    '2029-5-10': ['Kenaikan Yesus Kristus'],
     '2029-5-14': ['Tahun Baru Islam'],
     '2029-5-27': ['Hari Raya Waisak'],
     '2029-7-24': ['Maulid Nabi Muhammad SAW'],
@@ -492,8 +489,10 @@ class SolarUtil {
 
 //2030
   static const Map<String, List<String>> thirty_Holiday_Events_NoText = {
-    '2030-1-1': ['Tahun Baru Masehi'],
     '2030-2-2': ['Tahun Baru Imlek'],
+    '2030-4-19': ['Wafat Yesus Kristus (Jumat Agung)'],
+    '2030-4-21': ['Kebangkitan Yesus Kristus (Paskah)'],
+    '2030-5-30': ['Kenaikan Yesus Kristus'],
   };
 
   static const Map<String, List<String>> thirty_Holiday_Events = {
@@ -501,11 +500,8 @@ class SolarUtil {
     '2030-2-5': ['Hari Raya Idul Fitri'],
     '2030-3-5': ['Hari Suci Nyepi Tahun Baru Saka'],
     '2030-4-14': ['Hari Raya Idul Adha'],
-    '2030-4-19': ['Wafat Yesus Kristus (Jumat Agung)'],
-    '2030-4-21': ['Kebangkitan Yesus Kristus (Paskah)'],
     '2030-5-4': ['Tahun Baru Islam'],
     '2030-5-17': ['Hari Raya Waisak'],
-    '2030-5-30': ['Kenaikan Yesus Kristus'],
     '2030-7-13': ['Maulid Nabi Muhammad SAW'],
     '2030-11-23': ['Isra Mi\'raj Nabi Muhammad SAW']
   };
@@ -516,8 +512,10 @@ class SolarUtil {
 
 //2031
   static const Map<String, List<String>> thirtyOne_Holiday_Events_NoText = {
-    '2031-1-1': ['Tahun Baru Masehi'],
     '2031-1-23': ['Tahun Baru Imlek'],
+    '2031-4-11': ['Wafat Yesus Kristus (Jumat Agung)'],
+    '2031-4-13': ['Kebangkitan Yesus Kristus (Paskah)'],
+    '2031-5-22': ['Kenaikan Yesus Kristus'],
   };
 
   static const Map<String, List<String>> thirtyOne_Holiday_Events = {
@@ -525,11 +523,8 @@ class SolarUtil {
     '2031-1-26': ['Hari Raya Idul Fitri'],
     '2031-3-24': ['Hari Suci Nyepi Tahun Baru Saka'],
     '2031-4-3': ['Hari Raya Idul Adha'],
-    '2031-4-11': ['Wafat Yesus Kristus (Jumat Agung)'],
-    '2031-4-13': ['Kebangkitan Yesus Kristus (Paskah)'],
     '2031-4-23': ['Tahun Baru Islam'],
     '2031-5-7': ['Hari Raya Waisak'],
-    '2031-5-22': ['Kenaikan Yesus Kristus'],
     '2031-7-2': ['Maulid Nabi Muhammad SAW'],
     '2031-10-13': ['Isra Mi\'raj Nabi Muhammad SAW']
   };
